@@ -115,3 +115,4 @@ namespace patch_seb_lucas
 		private System.Windows.Forms.CheckBox checkBox2;
 	}
 }
+

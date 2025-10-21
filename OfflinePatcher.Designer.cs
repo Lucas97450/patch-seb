@@ -260,3 +260,4 @@ namespace patch_seb_lucas
 		private System.Windows.Forms.TextBox textBox1;
 	}
 }
+
