@@ -45,21 +45,21 @@ namespace patch_seb_lucas
 			AddLog("");
 			if (Environment.Is64BitOperatingSystem)
 			{
-				AddLog("[INFO] Detected x64 operating system.");
+				AddLog("Avertissement : Ce correctif a été développé dans le cadre d’un projet de recherche visant à identifier des vulnérabilités à des fins pédagogiques. Ne pas utiliser pour tricher ni pour commettre du plagiat — toute utilisation frauduleuse est illégale. [INFO] Système d'exploitation x64 détecté.");
 			}
 			else
 			{
-				AddLog("[INFO] Detected x86 operating system.");
+				AddLog("Avertissement : Ce correctif a été développé dans le cadre d’un projet de recherche visant à identifier des vulnérabilités à des fins pédagogiques. Ne pas utiliser pour tricher ni pour commettre du plagiat — toute utilisation frauduleuse est illégale. [INFO] Système d'exploitation x86 détecté.");
 			}
 
 			if (Environment.OSVersion.Version.Major != 10)
 			{
-				AddLog("[ERROR] Version Windows non supportée trouvée.");
+				AddLog("[ERROR] Version de Windows non supportée trouvée.");
 				button1.Enabled = false;
 			}
 			else if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + @"\SafeExamBrowser\Application\SafeExamBrowser.exe"))
 			{
-				AddLog("[ERROR] Safe Exam Browser non trouvé.");
+				AddLog("[ERROR] Safe Exam Browser non trouvé. Veuillez installer Safe Exam Browser avant depatcher.");
 				button1.Enabled = false;
 			}
 			else
