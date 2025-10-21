@@ -46,12 +46,12 @@ namespace patch_seb_lucas
 			AddLog("");
 			if (Environment.Is64BitOperatingSystem)
 			{
-				AddLog("⚠️  \u001b[1mAvertissement\u001b[0m : Ce correctif a été développé dans le cadre d’un projet de recherche visant à identifier des vulnérabilités à des fins pédagogiques. \u001b[1mNe pas utiliser pour tricher\u001b[0m ni pour commettre du plagiat — toute utilisation frauduleuse est illégale.");
+				AddLog("⚠️ Avertissement: Ce correctif a été développé dans le cadre d’un projet de recherche visant à identifier des vulnérabilités à des fins pédagogiques. Ne pas utiliser pour tricher ni pour commettre du plagiat — toute utilisation frauduleuse est illégale.");
 				AddLog("INFO] Système d'exploitation x64 détecté.");
 			}
 			else
 			{
-				AddLog("⚠️  \u001b[1mAvertissement\u001b[0m : Ce correctif a été développé dans le cadre d’un projet de recherche visant à identifier des vulnérabilités à des fins pédagogiques. \u001b[1mNe pas utiliser pour tricher\u001b[0m ni pour commettre du plagiat — toute utilisation frauduleuse est illégale.");
+				AddLog("⚠️ Avertissement: Ce correctif a été développé dans le cadre d’un projet de recherche visant à identifier des vulnérabilités à des fins pédagogiques. Ne pas utiliser pour tricher ni pour commettre du plagiat — toute utilisation frauduleuse est illégale.");
 				AddLog("INFO] Système d'exploitation x86 détecté.");
 			}
 
