@@ -35,6 +35,8 @@ namespace patch_seb_lucas
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			// Ensure runtime icon matches the executable's icon
+			this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
 			#if DEBUG
 				AddLog("Safe Exam Browser Patch (Debug/Beta) v" + Application.ProductVersion + " (Safe Exam Browser v" + Variables.SupportedSEB + ")");
 			#else
@@ -52,12 +54,12 @@ namespace patch_seb_lucas
 
 			if (Environment.OSVersion.Version.Major != 10)
 			{
-				AddLog("[ERROR] Supported Windows version not found.");
+				AddLog("[ERROR] Version Windows non supportée trouvée.");
 				button1.Enabled = false;
 			}
 			else if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + @"\SafeExamBrowser\Application\SafeExamBrowser.exe"))
 			{
-				AddLog("[ERROR] Safe Exam Browser not found.");
+				AddLog("[ERROR] Safe Exam Browser non trouvé.");
 				button1.Enabled = false;
 			}
 			else
@@ -66,7 +68,7 @@ namespace patch_seb_lucas
 				FileVersionInfo SEBDLLVersion = FileVersionInfo.GetVersionInfo(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles) + @"\SafeExamBrowser\Application\SafeExamBrowser.Configuration.dll");
 				if (SEBVersion.FileVersion != Variables.SupportedSEB)
 				{
-					AddLog("[ERROR] Found unsupported Safe Exam Browser version.");
+					AddLog("[ERROR] Version Safe Exam Browser non supportée trouvée.");
 					button1.Enabled = false;
 				}
 				else if (SEBVersion.ProductVersion == Variables.SupportedSEB || SEBDLLVersion.ProductVersion == "1.0.0.0") // Somehow the patched version string differs from the official version string.
@@ -75,14 +77,14 @@ namespace patch_seb_lucas
 					checkBox1.Enabled = false;
 					isBackup = false;
 					alreadyPatched = true;
-					button1.Text = "PATCH AGAIN/UPDATE";
-					AddLog("[WARNING] Found an already patched Safe Exam Browser.");
-					AddLog("READY TO UPDATE PATCH");
+					button1.Text = "PATCHER DE NOUVEAU/METTRE A JOUR";
+					AddLog("[WARNING] Un Safe Exam Browser est déjà patché.");
+					AddLog("PRET A PATCHER!!!");
 				}
 				else
 				{
-					AddLog("[INFO] Supported Safe Exam Browser version found.");
-					AddLog("READY TO PATCH");
+					AddLog("[INFO] Version Safe Exam Browser supportée trouvée.");
+					AddLog("PRET A PATCHER!!!");
 				}
 			}
 		}
@@ -91,7 +93,7 @@ namespace patch_seb_lucas
 		{
 			if (alreadyPatched)
 			{
-				var dialog = MessageBox.Show("An already patched Safe Exam Browser has been found. Are you sure to continue?","Safe Exam Browser Patch",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2);
+				var dialog = MessageBox.Show("Un Safe Exam Browser est déjà patché. Êtes-vous sûr de vouloir continuer?","Safe Exam Browser Patch",MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button2);
 				if (dialog == DialogResult.No)
 				{
 					return;
@@ -188,7 +190,7 @@ namespace patch_seb_lucas
 					File.Delete(Environment.GetFolderPath(Environment.SpecialFolder.Windows) + @"\Temp\SEB.reg");
 				}
 				AddLog("PATCHING DONE");
-				button1.Text = "PATCH DONE";
+				button1.Text = "PATCH COMPLETÉ";
 			}
 			catch (Exception ex)
 			{
