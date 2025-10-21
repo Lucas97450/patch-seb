@@ -37,7 +37,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <ApplicationIcon>SafeExamBrowser.ico</ApplicationIcon>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -117,7 +117,7 @@
     <None Include="Resources\x86\SafeExamBrowser.UserInterface.Desktop.dll" />
     <None Include="Resources\x64\SafeExamBrowser.UserInterface.Mobile.dll" />
     <None Include="Resources\x86\SafeExamBrowser.UserInterface.Mobile.dll" />
-    <Content Include="SafeExamBrowser.ico" />
+    <Content Include="logo.ico" />
   </ItemGroup>
 
   <ItemGroup>
