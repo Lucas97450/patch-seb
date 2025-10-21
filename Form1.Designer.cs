@@ -34,7 +34,7 @@ namespace patch_seb_lucas
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(212, 23);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "Safe Exam Browser Patch";
+			this.label1.Text = "Safe Exam Browser Patch - Lucas97450";
 			this.label1.ForeColor = System.Drawing.Color.Lime;
 			this.label1.Click += new System.EventHandler(this.label1_Click);
 			
