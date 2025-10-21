@@ -63,6 +63,8 @@ namespace patch_seb_lucas
 
 		private void OfflinePatcher_Load(object sender, EventArgs e)
 		{
+			// Ensure runtime icon matches the executable's icon for consistency
+			this.Icon = System.Drawing.Icon.ExtractAssociatedIcon(System.Windows.Forms.Application.ExecutablePath);
 			#if DEBUG
 				AddLog("Safe Exam Browser Offline Patch (Debug/Beta) v" + Application.ProductVersion + " (Safe Exam Browser v" + Variables.SupportedSEB + ")");
 			#else

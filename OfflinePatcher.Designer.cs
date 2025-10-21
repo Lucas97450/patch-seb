@@ -44,7 +44,8 @@ namespace patch_seb_lucas
 			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
 			| System.Windows.Forms.AnchorStyles.Right)));
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Lime;
 			this.label1.Location = new System.Drawing.Point(215, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(273, 23);
@@ -71,12 +72,18 @@ namespace patch_seb_lucas
 			this.button1.Size = new System.Drawing.Size(116, 29);
 			this.button1.TabIndex = 2;
 			this.button1.Text = "USE";
-			this.button1.UseVisualStyleBackColor = true;
+			this.button1.UseVisualStyleBackColor = false;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.FlatAppearance.BorderSize = 1;
+			this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+			this.button1.BackColor = System.Drawing.Color.Black;
+			this.button1.ForeColor = System.Drawing.Color.Lime;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
+			this.label2.ForeColor = System.Drawing.Color.Lime;
 			this.label2.Location = new System.Drawing.Point(6, 47);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(134, 19);
@@ -108,6 +115,7 @@ namespace patch_seb_lucas
 			this.groupBox2.TabIndex = 2;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Patch settings";
+			this.groupBox2.ForeColor = System.Drawing.Color.Lime;
 			// 
 			// checkBox2
 			// 
@@ -119,7 +127,9 @@ namespace patch_seb_lucas
 			this.checkBox2.Size = new System.Drawing.Size(410, 23);
 			this.checkBox2.TabIndex = 6;
 			this.checkBox2.Text = "Install custom certificate on the offline system (recommended)";
-			this.checkBox2.UseVisualStyleBackColor = true;
+			this.checkBox2.UseVisualStyleBackColor = false;
+			this.checkBox2.BackColor = System.Drawing.Color.Black;
+			this.checkBox2.ForeColor = System.Drawing.Color.Lime;
 			// 
 			// checkBox1
 			// 
@@ -129,7 +139,9 @@ namespace patch_seb_lucas
 			this.checkBox1.Size = new System.Drawing.Size(75, 23);
 			this.checkBox1.TabIndex = 5;
 			this.checkBox1.Text = "Backup";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.checkBox1.UseVisualStyleBackColor = false;
+			this.checkBox1.BackColor = System.Drawing.Color.Black;
+			this.checkBox1.ForeColor = System.Drawing.Color.Lime;
 			// 
 			// x86
 			// 
@@ -139,7 +151,9 @@ namespace patch_seb_lucas
 			this.x86.Size = new System.Drawing.Size(52, 23);
 			this.x86.TabIndex = 4;
 			this.x86.Text = "x86";
-			this.x86.UseVisualStyleBackColor = true;
+			this.x86.UseVisualStyleBackColor = false;
+			this.x86.BackColor = System.Drawing.Color.Black;
+			this.x86.ForeColor = System.Drawing.Color.Lime;
 			// 
 			// x64
 			// 
@@ -149,7 +163,9 @@ namespace patch_seb_lucas
 			this.x64.Size = new System.Drawing.Size(52, 23);
 			this.x64.TabIndex = 3;
 			this.x64.Text = "x64";
-			this.x64.UseVisualStyleBackColor = true;
+			this.x64.UseVisualStyleBackColor = false;
+			this.x64.BackColor = System.Drawing.Color.Black;
+			this.x64.ForeColor = System.Drawing.Color.Lime;
 			// 
 			// autodetect
 			// 
@@ -161,11 +177,14 @@ namespace patch_seb_lucas
 			this.autodetect.TabIndex = 2;
 			this.autodetect.TabStop = true;
 			this.autodetect.Text = "Auto-Detect (recommended)";
-			this.autodetect.UseVisualStyleBackColor = true;
+			this.autodetect.UseVisualStyleBackColor = false;
+			this.autodetect.BackColor = System.Drawing.Color.Black;
+			this.autodetect.ForeColor = System.Drawing.Color.Lime;
 			// 
 			// selectedinstallation
 			// 
 			this.selectedinstallation.AutoSize = true;
+			this.selectedinstallation.ForeColor = System.Drawing.Color.Lime;
 			this.selectedinstallation.Location = new System.Drawing.Point(21, 25);
 			this.selectedinstallation.Name = "selectedinstallation";
 			this.selectedinstallation.Size = new System.Drawing.Size(168, 19);
@@ -175,6 +194,7 @@ namespace patch_seb_lucas
 			// label3
 			// 
 			this.label3.AutoSize = true;
+			this.label3.ForeColor = System.Drawing.Color.Lime;
 			this.label3.Location = new System.Drawing.Point(21, 50);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(204, 19);
@@ -189,7 +209,12 @@ namespace patch_seb_lucas
 			this.button2.Size = new System.Drawing.Size(270, 62);
 			this.button2.TabIndex = 3;
 			this.button2.Text = "PATCH";
-			this.button2.UseVisualStyleBackColor = true;
+			this.button2.UseVisualStyleBackColor = false;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.FlatAppearance.BorderSize = 1;
+			this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+			this.button2.BackColor = System.Drawing.Color.Black;
+			this.button2.ForeColor = System.Drawing.Color.Lime;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// groupBox3
@@ -201,6 +226,7 @@ namespace patch_seb_lucas
 			this.groupBox3.TabIndex = 4;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Patch logs";
+			this.groupBox3.ForeColor = System.Drawing.Color.Lime;
 			// 
 			// textBox1
 			// 
@@ -211,6 +237,8 @@ namespace patch_seb_lucas
 			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
 			this.textBox1.Size = new System.Drawing.Size(707, 204);
 			this.textBox1.TabIndex = 0;
+			this.textBox1.BackColor = System.Drawing.Color.Black;
+			this.textBox1.ForeColor = System.Drawing.Color.Lime;
 			// 
 			// OfflinePatcher
 			// 
@@ -222,13 +250,14 @@ namespace patch_seb_lucas
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.label1);
-			this.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Font = new System.Drawing.Font("Consolas", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "OfflinePatcher";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Safe Exam Browser Offline Patcher";
+			this.BackColor = System.Drawing.Color.Black;
 			this.Load += new System.EventHandler(this.OfflinePatcher_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
