@@ -21,6 +21,7 @@ namespace patch_seb_lucas
 		public OfflinePatcher()
 		{
 			InitializeComponent();
+			ThemeHelper.ApplyHackerTheme(this);
 		}
 
 		public void AddLog(string log)

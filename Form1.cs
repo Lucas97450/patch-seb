@@ -27,6 +27,7 @@ namespace patch_seb_lucas
 		public Form1()
         {
             InitializeComponent();
+            ThemeHelper.ApplyHackerTheme(this);
         }
 		public void AddLog(string log)
 		{
